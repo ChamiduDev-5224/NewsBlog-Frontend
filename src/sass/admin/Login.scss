@@ -1,0 +1,40 @@
+@mixin margin-form {
+  border-radius: 5px;
+  margin: 0px 10px 10px;
+  padding: 4px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(23, 23, 46);
+  margin: 150px auto 160px auto;
+  gap: 20px;
+  width: fit-content;
+  height: fit-content;
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto auto auto;
+  }
+  input {
+    @include margin-form;
+    border: 0;
+  }
+  button {
+    @include margin-form;
+    background-color: red;
+    color: azure;
+    border: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(112, 9, 9);
+    }
+  }
+}
+.login-footer-section {
+  background-color: black;
+  height: 40px;
+  color: white;
+  padding-top: 3px;
+}
