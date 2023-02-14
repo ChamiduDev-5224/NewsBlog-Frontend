@@ -1,0 +1,35 @@
+.main-sport {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  .sport-left-section {
+    width: 750px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  .sport-left-section > h5 {
+    font-size: 30px;
+  }
+  .sport-left-section p::after {
+    content: "Read more..";
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .sport-right-section {
+    margin-top: 2rem;
+    width: 25%;
+
+    h4 {
+      margin: 2rem auto 0rem auto;
+      font-size: 30px;
+    }
+  }
+}
+.sport-headline {
+  border: 2px solid black;
+  padding: 12px;
+  overflow: hidden;
+}

@@ -1,0 +1,35 @@
+$grid-width: 36vh;
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+.business-news-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto auto auto;
+  border: 3px solid black;
+  padding: 3px;
+  span {
+    font-weight: bold;
+    width: $grid-width;
+    padding: 10px;
+  }
+}
+.grid:hover {
+  color: rgb(230, 50, 50);
+  cursor: pointer;
+  transition: 2sec;
+}
+.grid-img {
+  width: $grid-width;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.currency-section {
+  width: 100%;
+  border: 2px solid rgb(26, 26, 27);
+}
